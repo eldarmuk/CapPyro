@@ -1,16 +1,26 @@
 # CapPyro
 
-CapPyro is a simple Python-based interpreter. Although it shares many similarities with Python, it adopts a unique convention where all special keywords are expressed in CAPITAL letters, setting it apart from conventional Python interpreters.
+A small interpreter I built in Python to explore how a language works. It supports variables, functions, loops and lists, with uppercase keywords.
 
-## Getting Started
-
-To get started with CapPyro, you need to have Python installed on your system. You can clone the CapPyro repository and run the interpreter using the provided scripts.
-
-```bash
-git clone https://github.com/MukhtarovEldar/CapPyro.git
+```sh
+git clone https://github.com/eldarmuk/CapPyro.git
 cd CapPyro
 python shell.py
 ```
+
+```text
+cap > 2 + 3 * 4
+14
+cap > VAR x = 7
+7
+cap > x + 1
+8
+```
+
+These arithmetic and variable examples were checked on 28 September 2026. This is a learning project, not a Python-compatible interpreter.
+
+<details>
+<summary>Language grammar</summary>
 
 ## Expression Structure
 **Note**: `expr*` indicates zero or more occurrences of the `expr`, and `expr+` indicates that at least one occurrence of the `expr` is required.
@@ -80,3 +90,5 @@ STEP    THEN	TO      VAR	WHILE
 ```
 
 
+
+</details>
